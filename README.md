@@ -16,15 +16,21 @@ sudo dpkg -i cudnn-local-repo-ubuntu2204-8.9.7.29_1.0-1_amd64.deb <br>
 sudo cp /var/cudnn-local-repo-ubuntu2204-8.9.7.29/cudnn-local-8AE81B24-keyring.gpg /usr/share/keyrings/ <br>
 
 <h1>Install PyEnv</h1>
+<h2>do these in chunks</h2>
+
 curl -fsSL https://pyenv.run | bash <br>
+
 echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc <br>
 echo '[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc <br>
 echo 'eval "$(pyenv init - bash)"' >> ~/.bashrc <br>
+
 touch ~/.profile <br>
 echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.profile <br>
 echo '[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.profile <br>
 echo 'eval "$(pyenv init - bash)"' >> ~/.profile <br>
+
 exec "$SHELL" <br>
+
 sudo apt update; sudo apt install build-essential libssl-dev zlib1g-dev \ <br>
 libbz2-dev libreadline-dev libsqlite3-dev curl git \ <br>
 libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev <br>
