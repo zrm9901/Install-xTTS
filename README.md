@@ -1,3 +1,7 @@
+<h1>Nevermind, if you only care about xTTS, <a href="https://github.com/daswer123/xtts-finetune-webui" target="_blank">this</a> instead</h1>
+
+
+
 <h1>install Ubuntu 22.04 on WSL2</h1>
 wsl --install -d Ubuntu-22.04
 
